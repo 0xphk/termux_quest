@@ -14,7 +14,7 @@ ___
 ___
 session handling, see (https://wiki.termux.com/wiki/Terminal_Settings)
 
-* ```CTRL + n``` create new session
+* ```CTRL + t``` create new session
 * ```CTRL + n``` rename current session
 * ```CTRL + 1``` switch to previous session
 * ```CTRL + 2``` switch to next session
