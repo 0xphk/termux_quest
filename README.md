@@ -6,8 +6,16 @@ ___
 ___
 **installation**
 
-* make directory ```.termux``` in termux home
-* copy files to ```/data/data/com.termux/files/home/.termux/```
+* make sure your quest is in developer mode
+* download latest termux apk file (https://f-droid.org/en/packages/com.termux/)
+* open adb connection to headset and push files to /sdcard
+  * ```adb shell mkdir /sdcard/termux && adb push *.properties /sdcard/termux/```
+* sideload apk using adb (or sidequest for the lazy ppl)
+  * ```adb install -g com.termux_$ver.apk```
+* open termux app in headset under 'unknown sources' 
+* create directory ```.termux``` in termux home
+* run 'termux-setup-storage' to set permissions for /sdcard access
+* copy files from ```/sdcard/termux/``` to ```/data/data/com.termux/files/home/.termux/```
 * ```colors.properties``` is optional, adjust to your preference
   
   (uses manjaro green '#1aab9b' as terminal foreground color)
